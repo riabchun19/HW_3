@@ -20,7 +20,7 @@ namespace SimpleLambdaExpressions
             {"three",3 },
             };
 
-            var d = dict.OrderBy(delegate (KeyValuePair<string, int> pair) { return pair.Value; });
+            var d = dict.OrderBy(e => e.Value);
 
             foreach (var pair in d)
             {
